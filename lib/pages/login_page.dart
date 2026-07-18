@@ -22,11 +22,29 @@ class LoginPage extends StatelessWidget {
                 fontFamily: 'pacifico',
               ),
             ),
-            Text('LOG IN', style: TextStyle(fontSize: 24, color: Colors.white)),
+            Row(
+              children: [
+                Text(
+                  'LOG IN',
+                  style: TextStyle(fontSize: 24, color: Colors.white),
+                ),
+              ],
+            ),
             CustomTextField(hintText: 'Email'),
 
             CustomTextField(hintText: 'Password'),
             CustomButton(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'don\'t have an account ?',
+                  style: TextStyle(color: Colors.white),
+                ),
+
+                Text('Rigsiter', style: TextStyle(color: Color(0xffC7EDE6))),
+              ],
+            ),
           ],
         ),
       ),
